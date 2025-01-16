@@ -67,3 +67,12 @@ void MakeBeefPizza(pizzaSize size)
     cout << "Price " << CalcPizzaPrice(size, defaultPrice) << endl;
 }
 ```
+###### Output
+```plaintext
+Making Chicken Pizza
+Making Dough
+Adding toppings for Chicken Pizza
+Baking Pizza
+Chicken Pizza finished
+Price 90
+```
