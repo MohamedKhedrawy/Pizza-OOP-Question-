@@ -9,7 +9,7 @@ Utilize OOP to create Pizza class which
 
 price is calculated bu summing
 1. `pizzaPrice` same for all
-2.  `defaultPrice` for the a specific pizza type
+2.  `TypePrice` for the a specific pizza type
     - if small remain
     - if meduim multiply by 2
     - if extra multiply by 3
@@ -38,41 +38,41 @@ double CalcPizzaPrice(pizzaSize size, int defaultPrice)
     switch (size)
     {
     case SMALL:
-        defaultPrice *= 1;
+        TypePrice *= 1;
         break;
     case MEDUIM:
-        defaultPrice *= 2;
+        TypePrice *= 2;
         break;
     case EXTRA:
-        defaultPrice *= 3;
+        TypePrice *= 3;
     default:
         break;
     }
-    return defaultPrice + pizzaPrice;
+    return TypePrice + pizzaPrice;
 }
 
 void MakeChickenPizza(pizzaSize size)
 {
-    double defaultPrice = 20;
+    double TypePrice = 20;
     
     cout << "Making Chicken Pizza" << endl;
     MakeDough();
     cout << "Adding toppings for Chicken Pizza" << endl;
     Bake();
     cout << "Chicken Pizza finished" << endl;
-    cout << "Price " << CalcPizzaPrice(size, defaultPrice) << endl;
+    cout << "Price " << CalcPizzaPrice(size, TypePrice) << endl;
 }
 
 void MakeBeefPizza(pizzaSize size)
 {
-    double defaultPrice = 30;
+    double TypePrice = 30;
 
     cout << "Making Beef Pizza" << endl;
     MakeDough();
     cout << "Adding toppings for Beef Pizza" << endl;
     Bake();
     cout << "Beef Pizza finished" << endl;
-    cout << "Price " << CalcPizzaPrice(size, defaultPrice) << endl;
+    cout << "Price " << CalcPizzaPrice(size, TypePrice) << endl;
 }
 ```
 ###### Output
