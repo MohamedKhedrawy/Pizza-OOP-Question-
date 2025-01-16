@@ -1,5 +1,11 @@
 # Pizza-OOP-Question-
 
+## Requirements
+Utilize OOP to create Pizza class which
+1. Make dough
+2. Adding Toppings
+3. Bake
+4. Calculate the price
 ```cpp
 enum pizzaSize
 {
@@ -7,14 +13,17 @@ enum pizzaSize
     MEDUIM,
     EXTRA
 };
+
 void MakeDough()
 {
     cout << "Making Dough" << endl;
 }
+
 void Bake()
 {
     cout << "Baking Pizza" << endl;
 }
+
 double CalcPizzaPrice(pizzaSize size, int defaultPrice)
 {
     double pizzaPrice = 50;
@@ -33,6 +42,7 @@ double CalcPizzaPrice(pizzaSize size, int defaultPrice)
     }
     return defaultPrice + pizzaPrice;
 }
+
 void MakeChickenPizza(pizzaSize size)
 {
     double defaultPrice = 20;
@@ -44,6 +54,7 @@ void MakeChickenPizza(pizzaSize size)
     cout << "Chicken Pizza finished" << endl;
     cout << "Price " << CalcPizzaPrice(size, defaultPrice) << endl;
 }
+
 void MakeBeefPizza(pizzaSize size)
 {
     double defaultPrice = 30;
