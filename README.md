@@ -6,6 +6,13 @@ Utilize OOP to create Pizza class which
 2. Adding Toppings
 3. Bake
 4. Calculate the price
+
+price is calculated bu summing
+1. `pizzaPrice` same for all
+2.  `defaultPrice` for the a specific pizza type
+    - if small remain
+    - if meduim multiply by 2
+    - if extra multiply by 3
 ```cpp
 enum pizzaSize
 {
