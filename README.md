@@ -13,6 +13,7 @@ price is calculated bu summing
     - if small remain
     - if meduim multiply by 2
     - if extra multiply by 3
+> Consider Using OOP Properties (`Encapsulation`, `Abstraction`, `Inheritance`, `Ploymorphism`)
 ```cpp
 enum pizzaSize
 {
